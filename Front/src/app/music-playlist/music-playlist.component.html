@@ -1,0 +1,34 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="sidebarplaylist col-lg-3">
+      <div class="addPlaylist" id='sidebarplaylist'>
+        <i class="fas fa-folder-plus fa-4x" data-toggle="modal" data-target="#newPlaylist" title="Nouvelle playlist"></i>
+      </div>
+      <div *ngFor="let playlist of this.dataservice.tabPlaylist; let i = index" class="list-group">
+        <div class="list-group-item list-group-item-action playList">
+          <div class="playlistheader row">
+            <h4 class="col-8">{{playlist.nom}}</h4>
+            <div class="col-4 ico">
+              <i *ngIf="!activePlaylist" (click)="activer(i)" class="fas fa-plus-circle fa-2x"></i>
+              <i *ngIf="activePlaylist && divActive == i " (click)="activer($event, i)" class="fas fa-minus-circle fa-2x"></i>
+              <i (click)="this.dataservice.deletePlaylist(playlist)" class="fas fa-trash-alt fa-2x"></i>
+            </div>
+          </div>
+          <div *ngIf="activePlaylist && divActive == i" class="list">
+            <div *ngFor="let music of this.dataservice.tabMusicPlaylist">
+              <div *ngIf="comparer(music, playlist)" class="list-group-item list-group-item-action subPlaylist">
+                <div class="row">
+                  <h5 class="col-7">{{music.titre}}</h5>
+                  <div class="col-5 ico">
+                    <i (click)="playMusic(music)" class="fas fa-play-circle"></i>
+                    <i (click)="this.dataservice.deleteMusicPlaylist(music, playlist)" class="fas fa-trash-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

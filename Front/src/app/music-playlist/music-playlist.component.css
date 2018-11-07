@@ -1,0 +1,51 @@
+.sidebarplaylist {
+    font-family: 'Roboto', sans-serif;
+}
+
+.playlist {
+    display: flex;
+    justify-content: space-around;
+}
+
+h4, h5 {
+    display: inline;
+}
+
+i {
+    margin: 3px;
+}
+
+.playlistheader {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.ico {
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.subPlaylist {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* ##### BOUTON AJOUT PLAYLIST ##### */
+.addPlaylist {
+    text-align: center;
+}
+
+/* ##### GESTION SIDEBAR TOGGLE #####  EN PAUSE */
+
+.sidebarplaylist {
+    position: fixed;
+    right: 0;
+}
+
+@media screen and (max-width: 992px) {
+    .sidebarplaylist {
+        position: relative;
+        right: 0;
+    }
+}

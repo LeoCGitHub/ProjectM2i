@@ -1,0 +1,38 @@
+package com.music;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class MockRepository {
+public HashMap<Integer, MusicDto> lists = new HashMap<>();
+	
+	public MockRepository() {
+		MusicDto list = new MusicDto();
+		list.id = 1;
+		lists.put(list.id, list);
+		list.titre = "titre";
+		list.artiste = " artist ";
+		list.album = "album";
+		list.genre = "genre";
+		list.duree = (float) 4.3;
+		list.annee = 2008;
+		list.image = "url img";
+		list.mp3 = "url mp3";
+	}
+	
+	public void add(MusicDto list) {
+		lists.put(list.id, list);
+	}
+	
+	public MusicDto get(int id) {
+		return lists.get(id);
+	}
+	
+	public List<MusicDto> getAll() {
+		return new ArrayList<>(lists.values());
+	}
+}

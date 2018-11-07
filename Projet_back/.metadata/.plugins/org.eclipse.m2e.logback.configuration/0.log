@@ -1,0 +1,13 @@
+2018-10-25 21:52:27,489 [Worker-0: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-10-28 12:41:14,420 [Worker-4: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2018-10-28 12:42:16,876 [Worker-2: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:music:0.0.1-SNAPSHOT @ C:\Users\Léo\Desktop\DevM2i\M2iProjetFinal\M2i v2\Projet_back_2\music\pom.xml.
+2018-10-28 12:42:18,494 [Worker-2: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /music/src/main/java
+2018-10-28 12:42:18,496 [Worker-2: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /music/src/main/resources
+2018-10-28 12:42:18,497 [Worker-2: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /music/src/main/resources
+2018-10-28 12:42:18,498 [Worker-2: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /music/src/test/java
+2018-10-28 12:42:25,285 [Worker-2: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 10 sec
+2018-10-28 12:42:27,336 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-28 12:42:27,356 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-10-28 12:42:27,368 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-10-28 12:42:27,371 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-28 12:42:27,371 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Léo\Desktop\DevM2i\M2iProjetFinal\M2i v2\Projet_back_2\music\src\test\resources

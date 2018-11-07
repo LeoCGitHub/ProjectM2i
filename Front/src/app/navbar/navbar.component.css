@@ -1,0 +1,64 @@
+[class*='col-'] {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+.navbar {
+    justify-content: space-around;
+    margin-top: 50px;
+    color: white;
+    padding: 10px;
+    height: 60px;
+}
+
+#nav-tabContent {
+    display: flex;
+    right: 0;
+}
+
+.searchbar {
+    justify-content: center;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#search {
+    padding-left: 0;
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+}
+
+#nav-tabContent {
+    padding-left: 0;
+}
+
+#navsearch {
+    align-content: center;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.col-5 {
+    flex: 0;
+    width: 70px;
+}

@@ -1,0 +1,153 @@
+/* GESTION PAGE */
+
+[class*='col-'] {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+#library {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    justify-content: center;
+}
+
+/* GESTION des cards */
+
+.card {
+    margin: 15px;
+    text-align: center;
+    word-wrap: normal;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 300px;
+    height: 300px;
+}
+
+audio {
+    width: 100%;
+}
+
+#face2 {
+    background-color: black;
+    justify-content: center;
+    padding: 0;
+}
+
+p {
+    font-size: 0.8em;
+}
+
+.fas {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#cardicons {
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.card-img-top {
+    width: 68%;
+    height: 68%;
+    margin-top: 20px;
+}
+
+#face1 h4 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-variant: small-caps;
+    font-size: 1.5em;
+}
+
+#face2 h4 {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 25px;
+    font-size: 1em;
+}
+
+/* Gestion FLIP */
+
+#all {
+    perspective: 1000px;
+}
+
+#face1, #face2 {
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+#face1>.card, #face2>.card {
+    width: 100%;
+    height: 100%;
+}
+
+#all:hover #face {
+    transform: rotateY(180deg);
+}
+
+#face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition-duration: 0.8s;
+    transform-style: preserve-3d;
+    font-family: 'Roboto', sans-serif;
+}
+
+#face2 {
+    transform: rotateY(180deg);
+}
+
+#face2 {
+    color: white;
+}
+
+#face1_2 {
+    width: 100%;
+    height: 100%;
+}
+
+/* CSS boutonPlus */
+
+#imgPlus {
+    width: 100%;
+    margin-top: 50%;
+    margin-bottom: 50%;
+}
+
+#divPlus {
+    height: 100%;
+    line-height: 400px;
+}
+
+#divPlus:hover #icoNewMusic {
+    transform: scale(1.10);
+    transition-duration: 500ms;
+}
+
+#icoNewMusic {
+    margin: auto;
+}
+
+/* FORMULAIRE */
+
+.ng-valid[required], .ng-valid.required {
+    border-left: 5px solid #42A948;
+}
+
+.ng-invalid:not(form) {
+    border-left: 5px solid #a94442;
+}
+
+.form-control {
+    width: 100%;
+}

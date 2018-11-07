@@ -1,0 +1,69 @@
+package com.music;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/music")
+public class MusicController {
+	@Autowired
+	MockRepository mr;
+
+	// Afficher toutes les musiques
+	@GetMapping
+	public List<MusicDto> getAllOld() {
+		return mr.getAll();
+	}
+
+	// affiche les musiques by id
+	@GetMapping("/{id}")
+	public MusicDto getById(@PathVariable int id) {
+		return mr.get(id);
+	}
+
+	// création d'une musique
+	@PostMapping(value = "/")
+	public int createMusic(@RequestBody MusicDto music) throws Exception {
+		if (mr.get(music.id) != null) { // verifie que la musique existe via l'id
+			throw new Exception("Music already existing");
+		}
+		mr.add(music); // ajoute la musique a la hashmap
+		return music.id;
+	}
+
+	// u
+	@PutMapping("/{id}")
+	public int updateTodoListold(@RequestBody MusicDto music) throws Exception {
+		if (mr.get(music.id) == null) { // verifie que la liste avec l'id existe
+			throw new Exception("Music doesn't exist");
+		}
+		mr.add(music); // ajoute la musique modifiée (ou non) à la hashmap return list.id;
+		return music.id;
+	}
+
+	@DeleteMapping("/{id}")
+	public MusicDto deleteMusic(@PathVariable("id") int id, MusicDto music) throws Exception {
+
+		if (mr.get(music.id) == null) {
+			throw new Exception("Music doesn't exist"); // permet de tester si l'id de la musique n'est pas nul
+		} else if (mr.get(music.id) != null) {
+			return mr.remove(music); // si la musique n'est pas nulle (vide), alors "supprimer la musique",
+
+		}
+		return music;
+	}
+}
+// ici seront les différentes requetes
+// @GetMapping("/old")
+// @PostMapping("/{id}" => afficher par id
+// @DeleteMapping
+// @PutMapping

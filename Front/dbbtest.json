@@ -1,0 +1,105 @@
+{
+  "music": [
+    {
+      "titre": "E",
+      "artiste": "E",
+      "album": "E",
+      "genre": "E",
+      "annee": 2,
+      "image": "https://image.flaticon.com/icons/png/512/32/32328.png",
+      "file": "",
+      "id": 9
+    },
+    {
+      "titre": "e",
+      "artiste": "e",
+      "album": "e",
+      "genre": "e",
+      "annee": 2,
+      "image": "https://image.flaticon.com/icons/png/512/32/32328.png",
+      "file": "",
+      "id": 10
+    },
+    {
+      "titre": "Johnny",
+      "artiste": "Be",
+      "album": "Good",
+      "genre": "Rock",
+      "annee": 1989,
+      "image": "https://image.flaticon.com/icons/png/512/32/32328.png",
+      "file": ".\\assets\\Music\\BlackLung.mp3",
+      "id": 11
+    },
+    {
+      "titre": "fzerzer",
+      "artiste": "zerzerz",
+      "album": "zezer",
+      "genre": "zerze",
+      "annee": 33,
+      "image": ".\\assets\\Images\\default_cover.png",
+      "file": "",
+      "id": 14
+    },
+    {
+      "titre": "zz",
+      "artiste": "z",
+      "album": "z",
+      "genre": "zz",
+      "duree": "",
+      "annee": 1898,
+      "image": ".\\assets\\Images\\default_cover.png",
+      "file": "",
+      "id": 15
+    },
+    {
+      "titre": "zz",
+      "artiste": "z",
+      "album": "zz",
+      "genre": "zz",
+      "annee": 111,
+      "image": "C:\\fakepath\\ajouter-un-bouton_318-32466.jpg",
+      "file": "",
+      "id": 16
+    },
+    {
+      "titre": "ee",
+      "artiste": "ee",
+      "album": "ee",
+      "genre": "ee",
+      "annee": 1111,
+      "image": "C:\\fakepath\\Edit_icon-icons.com_55921.png",
+      "file": "",
+      "id": 17
+    },
+    {
+      "titre": "ee",
+      "artiste": "eee",
+      "album": "ee",
+      "genre": "ee",
+      "annee": 1111,
+      "image": "C:\\fakepath\\ajouter-un-bouton_318-32466.jpg",
+      "file": "",
+      "id": 18
+    },
+    {
+      "titre": "eee",
+      "artiste": "ee",
+      "album": "ee",
+      "genre": "ee",
+      "annee": 1234,
+      "image": "C:\\fakepath\\Edit_icon-icons.com_55921.png",
+      "file": "",
+      "id": 19
+    }
+  ],
+  "playlists": [
+    {
+      "id": 2,
+      "nom": "playlist 2",
+      "idMusic": [
+        11,
+        10
+      ]
+    }
+  ]
+}
